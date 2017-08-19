@@ -1,4 +1,4 @@
-require 'sinatra'
+
 require 'sinatra/base'
 require 'rack'
 
@@ -7,7 +7,7 @@ class MyApp < Sinatra::Base
   enable :sessions
 
   get '/' do
-    "Hello, world!"
+    erb :index
   end
 
   run! if app_file == $0
