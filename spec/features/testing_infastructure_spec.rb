@@ -7,8 +7,8 @@ RSpec.feature "Home page", type: :feature do
   end
 end
 
-feature "Welcome player page", type: :feature do 
-  scenario "it allows a user to submit their name and then displays the name" do
+feature "Welcome player page", type: :feature do
+  scenario "it allows a user to submit their name and then it displays the name" do
     sign_in_and_play
     expect(page).to have_text 'Welcome waterbottle'
     save_and_open_page
