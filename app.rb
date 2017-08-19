@@ -11,8 +11,15 @@ class MyApp < Sinatra::Base
   end
 
   post '/name' do
+    session[:name] = params[:name]
+    @name = session[:name]
+    redirect '/play'
+  end
 
-  end 
+  get '/play' do
+    @name
+    erb :play
+  end
 
   run! if app_file == $0
   # Only run the following code when this file is the main file being run
