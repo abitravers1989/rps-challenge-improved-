@@ -10,14 +10,13 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
-  post '/name' do
+  post '/' do
     session[:name] = params[:name]
-    @name = session[:name]
     redirect '/play'
   end
 
   get '/play' do
-    @name
+    @name = session[:name]
     erb :play
   end
 
