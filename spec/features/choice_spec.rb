@@ -1,5 +1,5 @@
 
-feature 'choice1.erb' do
+feature 'choice.erb' do
 
   scenario 'Player 1s name is shown' do
      sign_in_and_play

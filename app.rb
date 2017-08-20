@@ -2,6 +2,7 @@
 require 'sinatra/base'
 require 'rack'
 require_relative './lib/game'
+require './lib/player.rb'
 
 class MyApp < Sinatra::Base
 
@@ -11,17 +12,12 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
-  before do
-    @game = Game.instance_of_game
+  post '/choice' do
+     @game = Game.create_game(Player.new(params[:player_1]))
+     @game = Game.instance_of_game
+     erb :choice
   end
 
-  post '/' do
-    p params
-    session[:name] = params[:name]
-    @name = session[:name]
-    @game = Game.create_game
-    p "hey #{@game}"
-  end
 
   # get 'choice1' do
   #   print "hey #{@name}"
