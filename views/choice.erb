@@ -5,6 +5,26 @@
 </head>
 
 <body>
-  <h2> <%= @game.player.name %> </h2>
+  <h2> <%= "#{@player1}" %> </h2>
+  <h3> Choices: </h3>
+
+ <form action= "/inplay" method="post">
+   <input type="submit" value="Rock" name="choice">
+   <input type="submit" value="Paper" name="choice">
+   <input type="submit" value="Scissors" name="choice">
+</form>
+
+<!-- # <% if @in_play %>
+#   <h4> The computer selected: <%= "#{@comp_decision}" %>
+#
+# <% if @choice == "Rock" &&  @comp_decision == "Paper" %>
+#    <h4> Player Lost </h4>
+# <% elsif @choice == "Rock" &&  @comp_decision == "Scissor" %>
+#     <h4> Player Won </h4>
+#
+#
+# <% elsif @choice == @comp_decision %>
+#    <h4>  -->
+
 </body>
 </html>

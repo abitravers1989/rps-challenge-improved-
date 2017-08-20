@@ -13,4 +13,12 @@ CHOICE = ["Rock", "Paper", "Scissors"]
      @choice.sample
   end
 
+  # def self.create_game
+  #   @game = Game.new(player)
+  # end
+  #
+  # def self.instance_of_game
+  #   @game
+  # end
+
 end

@@ -13,15 +13,25 @@ class MyApp < Sinatra::Base
   end
 
   post '/' do
-     @game = Game.create_game(Player.new(params[:name]))
-     @game = Game.instance_of_game
-     redirect to '/choice'
+    session[:player_1] = params['player_1']
+    @in_play = false
+    redirect to '/choice'
   end
 
+  get '/choice' do
+     @player1 = session[:player_1]
+     @computer = Computerplayer.new
+     @comp_decision = @computer.computer_choice
+     session[:choice] = params['choice']
+     @player_choice = session[:choice]
+     erb :choice
+  end
 
-  # get 'choice1' do
-  #   print "hey #{@name}"
-  # end
+  post '/inplay' do
+    session[:choice] = params['choice']
+    @in_play = true
+    redirect to '/choice'
+  end
 
   run! if app_file == $0
   # Only run the following code when this file is the main file being run

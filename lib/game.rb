@@ -2,19 +2,19 @@ require './lib/player.rb'
 
 class Game
 
-  attr_reader :player
-
-  def initialize(player)
-    @player = player
-  end
-
-  def self.create_game
-    @game = Game.new(player)
-  end
-
-  def self.instance_of_game
-    @game
-  end
+  # attr_accessor :player
+  #
+  # def initialize
+  #   @player = player
+  # end
+  #
+  # def self.create_game
+  #   @game = Game.new(player)
+  # end
+  #
+  # def self.instance_of_game
+  #   @game
+  # end
 
 end
 
