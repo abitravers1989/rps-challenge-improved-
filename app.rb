@@ -20,6 +20,11 @@ class MyApp < Sinatra::Base
     erb :play
   end
 
+  post '/play' do
+  session[]
+  redirect 'selected_option'
+  end
+
   run! if app_file == $0
   # Only run the following code when this file is the main file being run
   # instead of having been required or loaded by another file
