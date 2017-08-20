@@ -1,4 +1,4 @@
-# 
+#
 #
 # feature 'Choosing Rock' do
 #   scenario 'player chooses rock' do

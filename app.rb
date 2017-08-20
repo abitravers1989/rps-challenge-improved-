@@ -1,6 +1,7 @@
 
 require 'sinatra/base'
 require 'rack'
+require_relative './lib/game'
 
 class MyApp < Sinatra::Base
 
@@ -10,26 +11,16 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
-  post '/play' do
-    p params
-    session[:name] = params[:name]
-    # redirect '/play'
+  before do
+    @game = Game.instance_of_game
   end
 
-  # get '/play' do
-  #   p params
-  #   @name = session[:name]
-  #   erb :play
-  # end
-  #
-  # post '/play' do
-  #   p params
-  #   redirect 'selected_option'
-  # end
-  #
-  # get '/selected_option'
-  #   dsdsd
-  # end
+  post '/choice1' do
+    p params
+    player_1 = params[:name]
+    @game = Game.create_new_game(player_1)
+    erb :choice1
+  end
 
   run! if app_file == $0
   # Only run the following code when this file is the main file being run
