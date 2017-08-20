@@ -1,6 +1,61 @@
-<h1> Welcome to the world sensational RPS. Please register your name below: </h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors Game</title>
+   <style>
+   h1 {
+      text-align: center;
+      color: #0B264F
+     }
+   label {
+    width: 250px;
+    float: left;
+    margin: 0 30px 0 30px;
+  }
+  span {
+      display: block;
+    }
 
-<form action="/" method="post">
-  <input type="text" name="name">
-  <input type="submit" value="Submit">
-</form>
+    input[type=submit] {
+      padding: 10px 20px;
+      margin: 20px 450px;
+      background:#0B2;
+      border:2
+      -webkit-border-radius: 12px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+ <form action="/play" method="post">
+
+  <h1> Welcome RPS World Championships </h1>
+   <!-- <div style= 'border: 3px dashed red', width: 140px, height: 260px>
+     <img src= "http://www.rd.com/wp-content/uploads/sites/2/2016/04/rock-paper-scissor-ft.jpg">
+   </div> -->
+   <div style="width: 640px; margin: 0 auto;">
+
+    <label for="player_1">
+      <span> Player 1 Enter Your Name:</span>
+      <input type="text" name="player_1" value="Marketeer" id="player_1">
+    </label>
+
+     <label for="player_2">
+       <span>Computer or Player 2 Name:</span>
+       <input type ="text" name="player_2" value="Computer" id="player_2">
+     </label>
+
+   </div>
+
+  <div id="start_game">
+    <input type="submit" value="Start Game">
+  </div>
+
+  </form>
+
+</body>
+
+</html>
