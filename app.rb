@@ -15,12 +15,17 @@ class MyApp < Sinatra::Base
     @game = Game.instance_of_game
   end
 
-  post '/choice1' do
+  post '/' do
     p params
-    player_1 = params[:name]
-    @game = Game.create_new_game(player_1)
-    erb :choice1
+    session[:name] = params[:name]
+    @name = session[:name]
+    @game = Game.create_game
+    p "hey #{@game}"
   end
+
+  # get 'choice1' do
+  #   print "hey #{@name}"
+  # end
 
   run! if app_file == $0
   # Only run the following code when this file is the main file being run

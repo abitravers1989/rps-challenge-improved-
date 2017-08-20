@@ -2,22 +2,23 @@ class Game
 
   attr_reader :name
 
-  def initialise(player_1)
-    @player_1 = player_1
+  def initialise
+    @name
   end
 
   def self.create_game
-    @game = Game.new(player_1)
-    p @game
+    @game = Game.new
+    p "#{@game}"
   end
 
   def self.instance_of_game
     @game
-    p @game
+    p "#{@game}"
   end
+
 end
 
-
-# game = Game.new("name")
-# p Game.create_game
-# p game.instance_of_game
+#
+# game = Game.new
+# p game2 = Game.create_game
+# Game.new.instance_of?("hey")
