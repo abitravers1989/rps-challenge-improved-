@@ -12,10 +12,10 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
-  post '/choice' do
-     @game = Game.create_game(Player.new(params[:player_1]))
+  post '/' do
+     @game = Game.create_game(Player.new(params[:name]))
      @game = Game.instance_of_game
-     erb :choice
+     redirect to '/choice'
   end
 
 
