@@ -1,9 +1,14 @@
 # RPS Challenge
 
+Where I am
+-------
+
+Confused about how to pass the game rules through.
+
 The Game
 -------
 
-The first page will ask for players names. The first name must be populated but the second can be the computer. If no name is given by the first player the name will default to 'marketeer'.
+The first page will ask for the players names. The first name must be populated (or is given as a default 'marketeer'). The second player is the computer.
 
 Player one is then asked to choice between three options.
 
