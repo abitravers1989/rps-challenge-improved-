@@ -14,8 +14,8 @@ class MyApp < Sinatra::Base
 
   post '/names' do
     @name1 = Player.new(params['player_1'])
-    $computer = Computerplayer.create_comp
-    $game = Game.create_game(@name1, $computer)
+    @computer = Computerplayer.create_comp
+    @game = Game.create_game(@name1, @computer)
     redirect to '/choice'
   end
 

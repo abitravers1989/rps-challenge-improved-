@@ -1,5 +1,6 @@
 require './lib/player.rb'
 require './lib/Computerplayer.rb'
+require './lib/gamelogic.rb'
 
 class Game
 
@@ -19,19 +20,19 @@ class Game
      @game
    end
 
-  def play
-    <% if @in_play %>
-      The computer selected: <%= "#{@comp_decision}
-
-    <% if @choice == "Rock" &&  @comp_decision == "Paper" %>
-       <h4> Player Lost </h4>
-    <% elsif @choice == "Rock" &&  @comp_decision == "Scissor" %>
-        <h4> Player Won </h4>
-
-   <% elsif @choice == @comp_decision %>
-       <h4>
-
-  end
+  # def play
+  #   <% if @in_play %>
+  #     The computer selected: <%= "#{@comp_decision}
+  #
+  #   <% if @choice == "Rock" &&  @comp_decision == "Paper" %>
+  #      <h4> Player Lost </h4>
+  #   <% elsif @choice == "Rock" &&  @comp_decision == "Scissor" %>
+  #       <h4> Player Won </h4>
+  #
+  #  <% elsif @choice == @comp_decision %>
+  #      <h4>
+  #
+  # end
 
 
 end
