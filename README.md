@@ -3,7 +3,7 @@
 Where I am
 -------
 
-Confused about how to pass the game rules through.
+Confused about how to pass the game rules through. Have not yet created game rules in game file and this file keeps throwing a wrong number of arguments error up. Need to go through methods on a class instead of an instance of a class more.
 
 The Game
 -------

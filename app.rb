@@ -12,24 +12,33 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
-  post '/' do
-    session[:player_1] = params['player_1']
-    @in_play = false
+  post '/names' do
+    @name1 = Player.new(params['player_1'])
+    $computer = Computerplayer.create_comp
+    $game = Game.create_game(@name1, $computer)
     redirect to '/choice'
   end
 
+  before do
+    @game = Game.instance_of_game
+    @comp = comp.instance_of_comp
+  end
+
   get '/choice' do
-     @player1 = session[:player_1]
-     @computer = Computerplayer.new
-     @comp_decision = @computer.computer_choice
-     session[:choice] = params['choice']
-     @player_choice = session[:choice]
      erb :choice
+  end
+
+  post "/choice" do
+    $game
+    @comp_decision = @comp.computer_choice
+    session[:choice] = params['choice']
+    @player_choice = session[:choice]
+    redirect to '/inplay'
   end
 
   post '/inplay' do
     session[:choice] = params['choice']
-    @in_play = true
+    # @in_play = true
     redirect to '/choice'
   end
 
