@@ -1,27 +1,27 @@
 #should be called gameplay but for ease of past work is not.
 
-
-require './lib/player.rb'
-require './lib/Computerplayer.rb'
-require './lib/gamelogic.rb'
-
-class Game
-
-  attr_accessor :player, :computer
-
-   def initialize(player, computer)
-     @player = player
-     @computer = computer
-
-   end
-
-   def self.create_game(player, computer)
-     @game = Game.new(player, computer)
-   end
-
-   def self.instance_of_game
-     @game
-   end
+#
+# require './lib/player.rb'
+# require './lib/Computerplayer.rb'
+# require './lib/gamelogic.rb'
+#
+# class Game
+#
+#   attr_accessor :player, :computer
+#
+#    def initialize(player, computer)
+#      @player = player
+#      @computer = computer
+#
+#    end
+#
+#    def self.create_game(player, computer)
+#      @game = Game.new(player, computer)
+#    end
+#
+#    def self.instance_of_game
+#      @game
+#    end
 
   # def play
   #   <% if @in_play %>
@@ -38,7 +38,7 @@ class Game
   # end
 
 
-end
+# end
 
 #
 # game = Game.new

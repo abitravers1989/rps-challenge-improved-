@@ -1,4 +1,0 @@
-
-class Gamelogic
-
-end 
