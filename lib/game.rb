@@ -1,3 +1,6 @@
+#should be called gameplay but for ease of past work is not.
+
+
 require './lib/player.rb'
 require './lib/Computerplayer.rb'
 require './lib/gamelogic.rb'
@@ -9,7 +12,7 @@ class Game
    def initialize(player, computer)
      @player = player
      @computer = computer
-     @score = []
+
    end
 
    def self.create_game(player, computer)

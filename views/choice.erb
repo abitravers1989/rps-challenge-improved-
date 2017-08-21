@@ -2,16 +2,28 @@
 <html>
 <head>
   <title>Named Player chooses RPS Option</title>
+  <style>
+     span {
+        display: block;
+       }
+
+  </style>
 </head>
 
 <body>
-  <h2> <%= "#{@player1}" %> </h2>
-  <h3> Choices: </h3>
+  <h2> <%= "#{@player}" %> </h2>
+  <h3> Make Your Choice: </h3>
 
- <form action= "/inplay" method="post">
-   <input type="submit" value="Rock" name="choice">
-   <input type="submit" value="Paper" name="choice">
-   <input type="submit" value="Scissors" name="choice">
+ <form action= "/choicez" method="post">
+   <label for="Rock">
+     <span> Rock:</span>
+   <input type="submit" name="choice" value="Rock">
+   <label for="Paper">
+     <span> Rock:</span>
+   <input type="submit" name="choice" value="Paper">
+   <label for="Scissors">
+     <span> Scissors:</span>
+   <input type="submit" name="choice" value="Scissors">
 </form>
 
  <!-- <% if @in_play %>
