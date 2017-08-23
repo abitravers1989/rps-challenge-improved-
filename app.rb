@@ -39,6 +39,8 @@ class MyApp < Sinatra::Base
     @player_choice = session[:choice]
     comp = Computerplayer.new
     @computer_choice =comp.computer_choice
+    game = Game.new(@player_choice, @computer_choice)
+    @decision = game.result
     erb :result
   end
 

@@ -1,41 +1,37 @@
-#
-# require './lib/player.rb'
-# require './lib/Computerplayer.rb'
-#
-# class Game
-#
-#   def results
-#     win is
-#
-#
-#
-#   end
 
+require './lib/player.rb'
+require './lib/computerplayer.rb'
 
+class Game
 
-#
-#   attr_accessor :player, :computer
-#
-#    def initialize(player, computer)
-#      @player = player
-#      @computer = computer
-#
-#    end
-#
-#    def self.create_game(player, computer)
-#      @game = Game.new(player, computer)
-#    end
-#
-#    def self.instance_of_game
-#      @game
-#    end
+  attr_accessor :player, :computer
 
+     def initialize(player, computer)
+       @player = player
+       @computer = computer
+     end
 
-
-
-# end
-
-#
-# game = Game.new
-# p game2 = Game.create_game
-# Game.new.instance_of?("hey")
+     def results
+        pchoice = @player.capitalize
+        cchoice = @computer.capitalize
+        if (pchoice== 'Rock') && (cchoice == 'Rock')
+           puts "Draw"
+        elsif (pchoice== 'Rock') && (cchoice == 'Paper')
+          puts "Player Won"
+        elsif (pchoice== 'Rock') && (cchoice == 'Scissors')
+          puts "Computer Won"
+        elsif (pchoice== 'Paper') && (cchoice == 'Paper')
+          puts "Draw"
+        elsif (pchoice== 'Paper') && (cchoice == 'Scissors')
+          puts "Computer Won"
+        elsif (pchoice== 'Paper') && (cchoice == 'Rock')
+          puts "Player Won"
+        elsif (pchoice== 'Scissors') && (cchoice == 'Paper')
+          puts "Player Won"
+        elsif (pchoice== 'Scissors') && (cchoice == 'Scissors')
+          puts "Draw"
+        else (pchoice== 'Scissors') && (cchoice == 'Rock')
+          puts "Computer Won"
+        end
+      end
+end
