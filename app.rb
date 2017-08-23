@@ -24,14 +24,23 @@ class MyApp < Sinatra::Base
 
   post '/choice' do
      session[:choice] = params[:choice]
+     #why is this not being passed through to the page?
+     @player_name = session[:names]
+     #is this needed?the erb
      erb :choice
      redirect to '/result'
   end
 
   get '/result' do
-    @player_name = session[:names]
+    #why is this not being passed through to the page?
+    @name = session[:names]
     @player_choice = session[:choice]
+    @computer_choice = 
+    @outcome =
+    erb :result
   end
+
+
 
 
   run! if app_file == $0
