@@ -1,11 +1,18 @@
-#should be called gameplay but for ease of past work is not.
-
 #
 # require './lib/player.rb'
 # require './lib/Computerplayer.rb'
-# require './lib/gamelogic.rb'
 #
 # class Game
+#
+#   def results
+#     win is
+#
+#
+#
+#   end
+
+
+
 #
 #   attr_accessor :player, :computer
 #
@@ -23,19 +30,7 @@
 #      @game
 #    end
 
-  # def play
-  #   <% if @in_play %>
-  #     The computer selected: <%= "#{@comp_decision}
-  #
-  #   <% if @choice == "Rock" &&  @comp_decision == "Paper" %>
-  #      <h4> Player Lost </h4>
-  #   <% elsif @choice == "Rock" &&  @comp_decision == "Scissor" %>
-  #       <h4> Player Won </h4>
-  #
-  #  <% elsif @choice == @comp_decision %>
-  #      <h4>
-  #
-  # end
+
 
 
 # end

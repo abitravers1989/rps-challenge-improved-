@@ -3,6 +3,7 @@ require 'sinatra/base'
 require 'rack'
 require_relative './lib/game'
 require './lib/player.rb'
+require './lib/Computerplayer.rb'
 
 class MyApp < Sinatra::Base
 
@@ -19,6 +20,7 @@ class MyApp < Sinatra::Base
 
   get '/choice' do
      @player_name = session[:names]
+
      erb :choice
   end
 
@@ -35,8 +37,8 @@ class MyApp < Sinatra::Base
     #why is this not being passed through to the page?
     @name = session[:names]
     @player_choice = session[:choice]
-    @computer_choice = 
-    @outcome =
+    comp = Computerplayer.new
+    @computer_choice =comp.computer_choice
     erb :result
   end
 
