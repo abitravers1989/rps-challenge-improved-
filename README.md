@@ -1,4 +1,25 @@
-# Rock Paper scissors (RPS) Challenge
+# Rock Paper scissors (RPS) Challenge Part 2
+
+What is this, what does part 2 mean?
+-------
+
+
+The first time I completed this challenge I unfortunately had to leave my avid fanbase with a bitter taste in their mouths... I was in week three of Makers and unable to complete the challenge, leaving the many players who downloaded it (basically me ...) unable to determine if their first Rock Paper of Scissors choice smashed the computer's random choice...
+
+
+Looking back, now I am over a month wiser, I decided to take my advise on what I did wrong (https://github.com/abitravers1989/rps-challenge/blob/master/README.md) and see if I could make any improvements.
+
+
+This time I started out with a diagrame and plan of action to be totally test driven (since over the past weeks I have learnt just how useful both of these techniques really are).   
+
+
+
+
+
+
+Some additional considerations:
+
+Following the rules of the previous challenge I have passed the object information (such as the players name) through as a global variable, instantiating the object through (self.instance and self.create).
 
 
 
