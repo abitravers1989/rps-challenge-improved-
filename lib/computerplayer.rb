@@ -1,16 +1,18 @@
 
-class Computerplayer
-
-  CHOICE = ["Rock", "Paper", "Scissors"]
-
-  attr_accessor :choice
-
-  def initialize
-    @choice = CHOICE
-  end
-
-  def computer_choice
-    return @choice.sample
-  end
-
-end
+# class Computerplayer
+#
+#   attr_accessor :choice
+#
+#   def initialize(choice)
+#     @choice = choice
+#   end
+#
+#   def self.create
+#     @computer = Computerplayer.new("Rock")
+#   end
+#
+#   def self.instance
+#     @computer
+#   end
+#
+# end

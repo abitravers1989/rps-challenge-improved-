@@ -25,7 +25,7 @@ class MyApp < Sinatra::Base
 
   post '/option' do
     player_choice = params[:choice]
-    @game_outcome = Game.create(player_choice, )
+    # @game_outcome = Game.create(player_choice, "Rock")
   end
 
   run! if app_file == $0

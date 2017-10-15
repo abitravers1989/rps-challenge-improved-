@@ -1,13 +1,12 @@
-# require 'game'
-# require 'computerplayer'
-#
-# describe Game do
-#
-#    describe '#initialize' do
-#      it 'A new game is instantiated with a player and computer' do
-#       let (:computer) { Computerplayer.new }
-#       let (:game) { Game.new("abi", computer) }
-#       expect(game.player).to eq ("abi")
-#      end
-#    end
-# end
+require 'game'
+
+describe Game do
+
+   describe '#initialize' do
+     let (:game) { Game.new("Paper") }
+
+     it 'A new game is instantiated with a players choice and Rock for the computer choice' do
+       expect(game.player_choice).to eq "Paper"
+     end
+   end
+end
