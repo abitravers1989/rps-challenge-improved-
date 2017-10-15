@@ -5,16 +5,21 @@ require './lib/player.rb'
 
 class MyApp < Sinatra::Base
 
-  enable :sessions
-
   get '/' do
     erb :index
   end
 
-  post '/names' do
-    session[:names] = params[:names]
-    p session[:names]
+  post '/name' do
+    @player = Player.new(params[:player_1])
+    puts @player.name
+    redirect to '/choice'
   end
+
+  get '/choice' do
+    erb :choice
+  end
+
+
 
   run! if app_file == $0
   # Only run the following code when this file is the main file being run
