@@ -1,41 +1,84 @@
-# RPS Challenge
+# Rock Paper scissors (RPS) Challenge
 
-Where I am
+
+
+How do I Install this RPS game?
 -------
 
-Confused about how to pass the game rules through. Have not yet created game rules in game file and this file keeps throwing a wrong number of arguments error up. Need to go through methods on a class instead of an instance of a class more.
 
-The Game
+1. Open up your command line.
+
+Do all the following within your beautiful yet immensely powerful command line:
+
+2. Clone this repo by typing:  ``git clone https://github.com/abitravers1989/rps-challenge.git ``.
+
+3. Navigate to this newly created repo by typing: ````cd rps-challenge````.
+
+4. Install all it's dependancies by typing ````bundle install ````. (This should take a couple of seconds but it provide you with some 'slightly interesting' installation code while you are waiting).
+
+
+
+Great I now have the game, but how do I play it?
 -------
+
+
+1. Open your command line again.
+
+2. If you aren't already in it, navigate to the project folder & type: ````rackup -p 6000````.
+
+3. Open your favourite web browser (unless it is Internet Explorer, in which case you have a more serious problem at hand which needs addressing before you play this game...).
+
+4. In the address bar of your firefox or chrome type in: ````http://localhost:6000````, while feeling smugg about your good life choices.
+
+
+
+The game which you have entered into...
+-------
+
 
 The first page will ask for the players names. The first name must be populated (or is given as a default 'marketeer'). The second player is the computer.
 
 Player one is then asked to choice between three options.
 
-## The Rules Are:
+
+
+The rules
+-------
+
 
 - Rock beats Scissors
 - Scissors beats Paper
 - Paper beats Rock
 
-## How You Install:
 
-- Folk this repo to your github or clone it directly through your command line.
- - In command line once you are in this games' project directory, type 'bundle' or 'bundler install' to get all the gems and dependancies.
 
-## How You Play The Game:
+The bad news ...
+-------
 
-1. Navigate into the project directory where you have cloned the file.
-2. Run 'Ruby app.rb' in your command line
-3. Load on your web-browser 'localhost:4567'. If your port number, given in the command line is not '4567' then please replace this with the correct number.
 
-## How I Have Tested:
-- Rspec with capybara add-on. The verson of rspec in Gemfile also tests 'coverage'.
-- Rubocop which checks for correct formatting.
+Please notice how I have put this last in order to trick you into attempting to play then bitter disappointment when you find out you cannot continue.
 
 
 
-The Set Task
+Testing
+-------
+
+
+Fear not, there is still some good news ... YOU CAN TEST IT .. (because everyone prefers testing someone else's code to playing a game .. right?.... )
+
+The gemfile which will be automatically installed when you run bundler pr bundle in the command line contains all the testing frameworks you need to take my code apart ... (It is only week 3 of Makers Academy... please be kind...)
+
+1. Open up our good friend the command line.
+
+2. Run ````Rspec````
+
+3. Watch the tests re-confirm the bad news. This test will automatically show coverage too.
+
+4. Run `````Rubocop ````` to check if the code is formatted correctly.
+
+
+
+The challenge which was set by Makers 
 ----
 
 
