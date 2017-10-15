@@ -12,7 +12,7 @@ Looking back, now I am over a month wiser, I decided to take my advise on what I
 
 This time I started out with a diagrame and plan of action to be totally test driven (since over the past weeks I have learnt just how useful both of these techniques really are).   
 
-
+![id](https://github.com/abitravers1989/rps-challenge-improved-/blob/master/public/plan.jpg?raw=true)
 
 
 
@@ -29,7 +29,7 @@ How do I Install this RPS game?
 
 1. Open up your command line. Do all the following within your beautiful yet immensely powerful command line:
 
-2. Clone this repo by typing:  ``git clone https://github.com/abitravers1989/rps-challenge.git ``.
+2. Clone this repo by typing:  ``git clone https://github.com/abitravers1989/rps-challenge-improved-.git ``.
 
 3. Navigate to this newly created repo by typing: ````cd rps-challenge````.
 
