@@ -7,11 +7,11 @@ class Player
   end
 
   def self.create(name)
-     @player = Player.new(name)
+    @player = Player.new(name)
   end
 
   def self.instance
-     @player 
+    @player 
   end
 
 end

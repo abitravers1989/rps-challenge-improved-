@@ -1,7 +1,6 @@
 # require 'game'
 # require 'computerplayer'
 #
-#
 # describe Game do
 #
 #    describe '#initialize' do

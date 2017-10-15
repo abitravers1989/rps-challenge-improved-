@@ -14,8 +14,8 @@ describe 'index.erb' do
 
     scenario "has prompt for player to enter name" do
       visit "/"
-    expect(page).to have_text "Player 1 Enter Your Name:"
-  end
+      expect(page).to have_text "Player 1 Enter Your Name:"
+    end
 
     scenario "It has start game button" do
       visit "/"

@@ -1,6 +1,6 @@
 # Rock Paper scissors (RPS) Challenge Part 2
 
-What is this, what does part 2 mean?
+What is part 2 about?
 -------
 
 
@@ -13,8 +13,6 @@ Looking back, now I am over a month wiser, I decided to take my advise on what I
 This time I started out with a diagrame and plan of action to be totally test driven (since over the past weeks I have learnt just how useful both of these techniques really are).   
 
 ![id](https://github.com/abitravers1989/rps-challenge-improved-/blob/master/public/plan.jpg?raw=true)
-
-
 
 
 Some additional considerations:
@@ -73,23 +71,6 @@ The rules
 
 The bad news ...
 -------
-
-
-Please notice how I have put this last in order to trick you into attempting to play then bitter disappointment when you find out you cannot continue.
-
-
-You may have noticed that you can input your name, great ... You can chose from a rock, paper or scissors, even more great .... but then you never get to find out what the computer chose and if you won or lost that game ... not so great ...
-
-
-This is because I got stuck implementing the game rules. I wasn't sure where to put them and how the interacted with the player or computer class. It seems that there were a few things contributing to my confusion:
-
-1. Poor design. Stopping to plan the classes and the methods on these classes after having done a little (and gained some understanding) would have helped.
-
-2. Understanding the flow through get and post better would allow a more easy visualisation of the problem at hand.
-
-3. Better test driven development. Spiking to understand the information flow but then being strict on testing driving my work flow.
-
-4. A better understanding on the relationship between classes and how to pass information through them.  
 
 
 
