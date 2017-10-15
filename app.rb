@@ -5,13 +5,17 @@ require './lib/player.rb'
 
 class MyApp < Sinatra::Base
 
+  before do
+    @player = Player.instance
+  end
+
   get '/' do
     erb :index
   end
 
   post '/name' do
-    @player = Player.new(params[:player_1])
-    puts @player.name
+    player_name = params[:player_1]
+    @player = Player.create(player_name)
     redirect to '/choice'
   end
 
