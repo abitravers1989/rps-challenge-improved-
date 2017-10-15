@@ -22,11 +22,11 @@ Great I now have the game, but how do I play it?
 
 1. Open your command line again.
 
-2. If you aren't already in it, navigate to the project folder & type: ````rackup -p 6000````.
+2. If you aren't already in it, navigate to the project folder & type: ````ruby app.rb````.
 
 3. Open your favourite web browser (unless it is Internet Explorer, in which case you have some serious life decisions issues which need addressing before you play this game...).
 
-4. In the address bar (of firefox or chrome ;-) ) type in: ````http://localhost:6000````, while feeling smugg about your good life choices.
+4. In the address bar (of firefox or chrome ;-) ) type in: ````http://localhost:4567/````, while feeling smugg about your good life choices.
 
 
 
