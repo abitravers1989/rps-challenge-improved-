@@ -1,7 +1,4 @@
 
-require './lib/player.rb'
-require './lib/computerplayer.rb'
-
 class Game
 
   attr_accessor :player_choice

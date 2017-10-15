@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'rack'
 require './lib/player.rb'
+require './lib/game.rb'
 # require './lib/Computerplayer.rb'
 
 class MyApp < Sinatra::Base
@@ -25,6 +26,8 @@ class MyApp < Sinatra::Base
 
   post '/option' do
     player_choice = params[:choice]
+    @game = Game.new(player_choice)
+    p @game.player_choice
     # @game_outcome = Game.create(player_choice, "Rock")
   end
 
