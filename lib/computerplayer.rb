@@ -1,7 +1,7 @@
 
 class Computerplayer
 
-CHOICE = ["Rock", "Paper", "Scissors"]
+  CHOICE = ["Rock", "Paper", "Scissors"]
 
   attr_accessor :choice
 
@@ -10,7 +10,7 @@ CHOICE = ["Rock", "Paper", "Scissors"]
   end
 
   def computer_choice
-     return @choice.sample
+    return @choice.sample
   end
 
 end

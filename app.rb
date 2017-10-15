@@ -11,9 +11,10 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
-  # post '/names' do
-  #   session[:names] = params[:names]
-  # end
+  post '/names' do
+    session[:names] = params[:names]
+    p session[:names]
+  end
 
   run! if app_file == $0
   # Only run the following code when this file is the main file being run
