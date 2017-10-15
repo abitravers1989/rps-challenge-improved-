@@ -6,9 +6,7 @@ How do I Install this RPS game?
 -------
 
 
-1. Open up your command line.
-
-Do all the following within your beautiful yet immensely powerful command line:
+1. Open up your command line. Do all the following within your beautiful yet immensely powerful command line:
 
 2. Clone this repo by typing:  ``git clone https://github.com/abitravers1989/rps-challenge.git ``.
 
@@ -26,9 +24,9 @@ Great I now have the game, but how do I play it?
 
 2. If you aren't already in it, navigate to the project folder & type: ````rackup -p 6000````.
 
-3. Open your favourite web browser (unless it is Internet Explorer, in which case you have a more serious problem at hand which needs addressing before you play this game...).
+3. Open your favourite web browser (unless it is Internet Explorer, in which case you have some serious life decisions issues which need addressing before you play this game...).
 
-4. In the address bar of your firefox or chrome type in: ````http://localhost:6000````, while feeling smugg about your good life choices.
+4. In the address bar (of firefox or chrome ;-) ) type in: ````http://localhost:6000````, while feeling smugg about your good life choices.
 
 
 
@@ -59,6 +57,20 @@ The bad news ...
 Please notice how I have put this last in order to trick you into attempting to play then bitter disappointment when you find out you cannot continue.
 
 
+You may have noticed that you can input your name, great ... You can chose from a rock, paper or scissors, even more great .... but then you never get to find out what the computer chose and if you won or lost that game ... not so great ...
+
+
+This is because I got stuck implementing the game rules. I wasn't sure where to put them and how the interacted with the player or computer class. It seems that there were a few things contributing to my confusion:
+
+1. Poor design. Stopping to plan the classes and the methods on these classes after having done a little (and gained some understanding) would have helped.
+
+2. Understanding the flow through get and post better would allow a more easy visualisation of the problem at hand.
+
+3. Better test driven development. Spiking to understand the information flow but then being strict on testing driving my work flow.
+
+4. A better understanding on the relationship between classes and how to pass information through them.  
+
+
 
 Testing
 -------
@@ -78,7 +90,7 @@ The gemfile which will be automatically installed when you run bundler pr bundle
 
 
 
-The challenge which was set by Makers 
+The challenge which was set by Makers
 ----
 
 
