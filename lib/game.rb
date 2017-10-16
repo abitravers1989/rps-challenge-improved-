@@ -7,6 +7,14 @@ class Game
     @player_choice = player_choice
   end
 
+  def self.create(player_choice)
+    @game = Game.new(player_choice)
+  end
+
+  def self.instance
+    @game
+  end
+
 end
 
   # def results

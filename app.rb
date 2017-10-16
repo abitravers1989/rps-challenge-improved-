@@ -8,6 +8,7 @@ class MyApp < Sinatra::Base
 
   before do
     @player = Player.instance
+    @game = Game.instance
   end
 
   get '/' do
@@ -26,9 +27,15 @@ class MyApp < Sinatra::Base
 
   post '/option' do
     player_choice = params[:choice]
-    @game = Game.new(player_choice)
-    p @game.player_choice
+    @game = Game.create(player_choice)
+    # p @game.player_choice
+    redirect '/game_result'
     # @game_outcome = Game.create(player_choice, "Rock")
+  end
+
+  get '/game_result' do
+    erb :game_result
+    # @game.player_choice
   end
 
   run! if app_file == $0

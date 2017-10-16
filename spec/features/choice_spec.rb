@@ -1,3 +1,4 @@
+require './app'
 
 describe 'choice.erb' do
 
@@ -14,12 +15,12 @@ describe 'choice.erb' do
 
   end
 
-  # feature "Form input & buttons" do
-  #
-  #   scenario "has choice buttons" do
-  #     expect { find_button('Rock') }.to_not raise_error
-  #   end
-  #
-  # end
+  feature "Form input & buttons" do
+
+    scenario "has choice buttons" do
+      expect { find_button('Rock') }.to_not raise_error
+    end
+
+  end
 
 end
