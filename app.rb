@@ -34,6 +34,7 @@ class MyApp < Sinatra::Base
   end
 
   get '/game_result' do
+    p @game.result
     erb :game_result
     # @game.player_choice
   end
