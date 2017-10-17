@@ -15,6 +15,12 @@ class Game
     @game
   end
 
+  def result
+    if @player_choice == "Paper"
+      return "Winner"
+    end
+  end
+
 end
 
   # def results

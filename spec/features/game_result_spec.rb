@@ -9,8 +9,8 @@ describe 'game_result.erb' do
 
  feature "game_result page" do
 
-  scenario "it says hi" do
-    expect(page).to have_text "hii"
+  scenario "The computer chose Rock" do
+    expect(page).to have_text "The Computer chose Rock"
   end
 
 end

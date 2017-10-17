@@ -1,15 +1,14 @@
 require './app'
+require 'spec_helper'
 
-describe 'choice.erb' do
+RSpec.feature 'choice.erb', type: :feature do
 
-  before do
-    sign_in_and_play
-  end
-
-  feature "text contains the players name" do
+  # feature "text contains the players name" do
 
     scenario 'The choice page displays the players name' do
-      visit "/choice"
+      visit "/"
+      fill_in 'player_1', with: 'waterbottle'
+      click_on('Start Game')
       expect(page).to have_text 'waterbottle'
     end
 
@@ -18,9 +17,8 @@ describe 'choice.erb' do
   feature "Form input & buttons" do
 
     scenario "has choice buttons" do
+      p page
       expect { find_button('Rock') }.to_not raise_error
     end
 
   end
-
-end
