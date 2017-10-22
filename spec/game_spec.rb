@@ -17,11 +17,13 @@ describe Game do
     end
 
     it 'states that the Player drew if they chose Rock' do
-      expect(game.result).to eq "ARE Average! You neither won or lost ..."
+      game2 = Game.new("Rock")
+      expect(game2.result).to eq "ARE Average! You neither won or lost ..."
     end
 
     it 'states that the Player drew if they chose Scissors' do
-      expect(game.result).to eq "MASSIVE LOOSER"
+      game3 = Game.new("Scissors")
+      expect(game3.result).to eq "MASSIVE LOOSER"
     end
   end
 
