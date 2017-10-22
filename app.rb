@@ -27,7 +27,10 @@ class MyApp < Sinatra::Base
 
   post '/option' do
     player_choice = params[:choice]
+    p player_choice
     @game = Game.create(player_choice)
+    p @game
+    p @game.result
     # p @game.player_choice
     redirect '/game_result'
     # @game_outcome = Game.create(player_choice, "Rock")

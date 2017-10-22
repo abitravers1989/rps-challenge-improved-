@@ -15,11 +15,42 @@ class Game
     @game
   end
 
-  def result
+  def player_win
+    return "WON"
+  end
+
+  def player_drew
+    return "ARE Average! You neither won or lost ..."
+  end
+
+  def player_lost
+     return "MASSIVE LOOSER"
+  end
+
+  def win
     if @player_choice == "Paper"
-      return "Winner"
+    @game.player_win
+  end
+  end
+
+  def lose
+    if @player_choice == "Scissors"
+       @game.player_lost
     end
   end
+
+  def draw
+    if @player_choice == "Rock"
+  @game.player_drew
+  end
+
+end
+
+def result
+  @game.lose
+  @game.win
+  @game.draw
+end
 
 end
 
