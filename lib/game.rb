@@ -29,27 +29,27 @@ class Game
 
   def win
     if @player_choice == "Paper"
-    @game.player_win
+    player_win
   end
   end
 
   def lose
     if @player_choice == "Scissors"
-       @game.player_lost
+      player_lost
     end
   end
 
   def draw
     if @player_choice == "Rock"
-  @game.player_drew
+    player_drew
   end
 
 end
 
 def result
-  @game.lose
-  @game.win
-  @game.draw
+  lose
+  # @game.win
+  # @game.draw
 end
 
 end
