@@ -27,29 +27,33 @@ class Game
      return "MASSIVE LOOSER"
   end
 
-  def win
-    if @player_choice == "Paper"
-    player_win
-  end
-  end
+  # def win
+  #   if @player_choice == "Paper"
+  #   player_win
+  # end
+  # end
+  #
+  # def lose
+  #   if @player_choice == "Scissors"
+  #     player_lost
+  #   end
+  # end
+  #
+  # def draw
+  #   if @player_choice == "Rock"
+  #   player_drew
+  # end
 
-  def lose
-    if @player_choice == "Scissors"
-      player_lost
-    end
-  end
 
-  def draw
-    if @player_choice == "Rock"
-    player_drew
-  end
-
-end
 
 def result
-  lose
-  # @game.win
-  # @game.draw
+  if (@player_choice == "Scissors")
+    player_lost
+  elsif (@player_choice == "Paper")
+    player_win
+  else
+      player_drew
+  end
 end
 
 end
